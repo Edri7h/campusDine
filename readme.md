@@ -190,6 +190,7 @@ All APIs follow RESTful conventions and exchange data in JSON format. Authentica
 
 POST /api/auth/register  
 Request Payload:
+```json
 {
   "name": "John Doe",
   "email": "john@example.com",
@@ -216,6 +217,8 @@ Response:
   "role": "Student"
 }
 
+```
+
 ### Outlet & Menu APIs
 
 | Method | Endpoint | Description |
@@ -226,7 +229,7 @@ Response:
 
 GET /api/outlets  
 Request Payload: None
-
+```json
 Response:
 [
   {
@@ -260,6 +263,7 @@ Response:
 {
   "message": "Menu item availability updated"
 }
+```
 
 ### Order APIs
 
@@ -271,6 +275,7 @@ Response:
 
 POST /api/orders/place  
 Request Payload:
+```json
 {
   "user_id": 101,
   "outlet_id": 1,
@@ -291,9 +296,10 @@ Response:
   "order_id": 5001,
   "status": "Placed"
 }
-
+```
 GET /api/orders/user/{id}  
 Request Payload: None
+```json
 
 Response:
 [
@@ -317,6 +323,7 @@ Response:
     "status": "Placed"
   }
 ]
+```
 
 ### Order Management APIs (Outlet Staff)
 
@@ -327,6 +334,9 @@ Response:
 
 PUT /api/orders/{id}/accept  
 Request Payload: None
+
+
+```json
 
 Response:
 {
@@ -344,7 +354,7 @@ Response:
 {
   "message": "Order status updated successfully"
 }
-
+```
 
 ## Installation & Setup (Development)
 
@@ -358,11 +368,6 @@ npm run dev
 
 cd backend
 ./mvnw spring-boot:run
-
-
-
-
-
 
 
 

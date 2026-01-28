@@ -425,3 +425,12 @@ The application is designed with a production-ready deployment strategy, separat
 ### Deployment Note
 
 This deployment plan represents the intended production architecture. Actual deployment steps may be refined during implementation while maintaining the overall system design.
+
+
+
+## Contributors
+
+- Ehtesham Nawaz – Documentation  Review & Frontend Development
+- AshmitMathur – Backend Development (Spring Boot)
+- Himanshi – Backend Development (Spring Boot)
+- Divyansh Tak – Backend Development (Spring Boot)
